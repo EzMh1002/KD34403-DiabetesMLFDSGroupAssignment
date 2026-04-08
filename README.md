@@ -1,4 +1,4 @@
-# KD34403 - Diabetes MLFDS Group Assignment 
+# KD34403 - Diabetes MLFDS Group 13 Assignment 
 ## Machine Learning Fundamental Data Science Group Assignment
                                                                                   
 ### --------Group Member---------                                                      
