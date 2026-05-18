@@ -6,7 +6,7 @@ import os
 folder = os.path.dirname(os.path.abspath(__file__))
 
 # Run sequence
-scripts = ["DataCleaningM1.py","TrainingLoop.py","Optimization.py"]
+scripts = ["Milestone1_DataCleaning.py","Milestone3_TrainingLoop.py","Milestone4&5_Optimization_Evaluation.py.py"]
 
 for script in scripts:
     path = os.path.join(folder, script)
