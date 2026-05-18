@@ -16,7 +16,7 @@ from sklearn.model_selection import learning_curve
 
 print("Milestone 4 - Optimization: RF + Sampling + Tuning")
 
-#Load data
+#Load dataset
 df = pd.read_csv('cleaned_diabetes_data.csv')
 X = df.drop('target', axis=1)
 y = df['target']
@@ -177,7 +177,6 @@ def kfold_param_search(X, y, label, sampler=None, use_balanced_rf=False):
 
 
 #K-Fold Evaluation
-
 def evaluate_kfold_sampling(X, y, label, params, best_t, sampler=None, use_balanced_rf=False):
 
     print(f"\nK-FOLD: {label}")
@@ -220,7 +219,6 @@ def evaluate_kfold_sampling(X, y, label, params, best_t, sampler=None, use_balan
 
 
 # Method run
-
 methods = [
     ("No Sampling", None, False),
     ("SMOTE", SMOTE(random_state=67), False),
@@ -349,7 +347,6 @@ else:
     print("No parameters stored (manual split model)")
     
 # Visualisation
-
 print("\nGenerating Visualizations...")
 
 best_data = visualization_store[best_label]
@@ -367,7 +364,6 @@ val_recall_progress = best_data['val_recall_progress']
 feature_names = X.columns.tolist()
 
 #Validation Recall Progression
-
 fig, ax = plt.subplots(figsize=(12,6))
 
 ax.plot(range(1, len(val_recall_progress)+1),
@@ -389,7 +385,6 @@ plt.close()
 print("Saved: optimization_f1_progress.png")
 
 #Manual Split Comparison
-
 results_df = pd.DataFrame(results_all,
                           columns=['Method','Accuracy','Recall',
                                    'Precision','F1','AUC'])
@@ -422,7 +417,6 @@ plt.close()
 print("Saved: sampling_method_comparison.png")
 
 #Learning Curve
-
 fig, ax = plt.subplots(figsize=(10,6))
 
 train_sizes, train_scores, val_scores = learning_curve(model,X_train_scaled,y_train_local,train_sizes=np.linspace(0.1, 1.0, 10),cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=67),scoring='recall_macro',error_score=0)
@@ -449,7 +443,6 @@ plt.close()
 print("Saved: learning_curve_optimization.png")
 
 #Confusion Matrix
-
 fig, ax = plt.subplots(figsize=(6,5))
 
 cm = confusion_matrix(test_pred, y_test)
@@ -468,7 +461,6 @@ plt.close()
 print("Saved: confusion_matrix_optimization.png")
 
 #Feature Importance
-
 if hasattr(model, 'feature_importances_'):
 
     fig, ax = plt.subplots(figsize=(10,6))
