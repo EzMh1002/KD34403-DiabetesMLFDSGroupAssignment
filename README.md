@@ -5,7 +5,7 @@
 1. Lim Ming Herng                                                                 
 2. Lim Chern Hang                                                                 
 3. Brandon Evanoel Rayner                                                         
-4. Andy Siah Chun Xing                                                            
+4. Andy Siah Chun Xing                                                         
 5. Isma Daniel Chung Soon Fan                                                     
 __________________________________________________________________________________
 # TO COMPILE AND RUN ALL THE PYTHON FROM MILESTONE 1-5, EXECUTE DiabetesFullRun.py 
