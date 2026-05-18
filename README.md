@@ -8,7 +8,7 @@
 4. Andy Siah Chun Xing                                                            
 5. Isma Daniel Chung Soon Fan                                                     
 __________________________________________________________________________________
-
+# TO COMPILE AND RUN ALL THE PYTHON FROM MILESTONE 1-5, EXECUTE DiabetesFullRun.py 
 Dataset used: Pima Indians Diabetes Database; 768 instances; 8 numeric attributes
 #### Metadata shows no missing values
 ---------------------------------------------
