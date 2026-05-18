@@ -20,4 +20,8 @@ Dataset used: Pima Indians Diabetes Database; 768 instances; 8 numeric attribute
 3. Performed label encoding for clarity.
 4. Generate feature correlation heatmap to find relation between the attributes to check for possible dimensionality reduction.
 5. Process an .arff format file and output a cleaned dataset in .csv format.
-   
+
+## Milestone 5: Final Evaluation - Lim Chern Hang
+1. Evaluating the final selected model with different standard metrics
+2. Comparison between final model and other models used
+3. Visualization of the best model
